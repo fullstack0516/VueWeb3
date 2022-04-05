@@ -1,0 +1,32 @@
+{
+  "name": "vue-web3",
+  "version": "0.0.0-development",
+  "description": "Web3 bindings for Vue.js",
+  "source": "src/index.js",
+  "main": "dist/vue-web3.js",
+  "module": "dist/vue-web3.esm.js",
+  "repository": "https://github.com/morrislaptop/vue-web3.git",
+  "author": "Craig Morris <cr@igmorr.is>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "bignumber.js": "https://github.com/frozeman/bignumber.js-nolookahead.git",
+    "chai": "^4.1.2",
+    "chai-bignumber": "^2.0.2",
+    "ganache-cli": "^6.1.0-beta.4",
+    "microbundle": "^0.4.4",
+    "semantic-release": "^12.4.1",
+    "truffle": "^4.1.0",
+    "vue": "^2.5.13",
+    "web3": "^1.0.0-beta.35"
+  },
+  "scripts": {
+    "dev": "microbundle watch",
+    "build": "microbundle",
+    "test": "truffle test",
+    "prepublishOnly": "yarn build"
+  },
+  "peerDependencies": {
+    "web3": "^1.0.0"
+  }
+}
